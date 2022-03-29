@@ -1,26 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="danger">
-    <ion-title> Tabs Layout </ion-title>
+  <ion-toolbar>
+    <ion-title>Blank</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-label>Home</ion-label>
-        <ion-icon name="home"></ion-icon>
-      </ion-tab-button>
-
-      <ion-tab-button tab="settings">
-        <ion-label>Settings</ion-label>
-        <ion-icon name="settings"></ion-icon>
-      </ion-tab-button>
-
-      <ion-tab-button tab="account">
-        <ion-label>Account</ion-label>
-        <ion-icon name="settings"></ion-icon>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+  <ion-button (click)="showActionSheet()"
+    >Click to show action sheet</ion-button
+  >
+  <ion-button (click)="presentAlertConfirm()">Show Alert Confirm</ion-button>
+  <ion-button (click)="presentAlertPrompt()">Show Alert Input</ion-button>
+  <ion-badge color="danger">55</ion-badge>
 </ion-content>
